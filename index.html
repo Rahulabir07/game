@@ -9,9 +9,14 @@
 </head>
 <body>
     <main class="main-cantainer">
-        <div class="game-playar">
-            <div class="player" id="xUser"><span >X</span></div>
-            <div class="player" id="oUser"><span >O</span></div>
+
+        <div class="game-playar" id="game-playar">
+            TIC-TAC-TOE
+        </div>
+        <div class="game-wine-bar" id="game-wine-bar">
+        </div>
+        <div class="palyer-tarn" id="player_tarn">
+            It's the X turn
         </div>
         <div class="game-container" id="game-container">
             <button class="box" id="0"></button>
@@ -24,12 +29,12 @@
             <button class="box" id="7"></button>
             <button class="box" id="8"></button>
         </div>
-        <div class="reset-button-container">
-            <button class="reset-button">
-                <i class="fa-solid fa-rotate-right" id="rotate"></i>
-            </button>
-        </div>
     </main>
+    <div class="reset-button-container">
+        <button class="reset-button" id="reset-button" onclick="resetGame()">
+            <i class="fa-solid fa-rotate-right" id="rotate"></i>
+        </button>
+    </div>
     <script src="./script.js"></script>
 </body>
 </html>
